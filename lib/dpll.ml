@@ -39,9 +39,7 @@ let clausal a : cnf =
     | False -> [ [] ]
   and neg = function
     | Var x -> [ [ (false, x) ] ]
-    | And (a, b) ->
-        let a = neg a in
-        let b = neg b in
+    | And (a, b) -> let a = neg a in let b = neg b in
         merge a b
     | Or (a, b) ->
         let a = neg a in
