@@ -1,6 +1,6 @@
 (lang dune 2.8)
 
-(name dpll)
+(name sat)
 
 (version 0.1.0)
 
@@ -15,6 +15,6 @@
 (generate_opam_files true)
 
 (package
- (name dpll)
+ (name sat)
  (synopsis
-  "A library implementing a popular satisifiability solver algorithm"))
+  "A library implementing a satisifiability algorithm"))
